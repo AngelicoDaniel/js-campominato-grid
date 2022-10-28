@@ -11,18 +11,18 @@ footer {
     height:  70px;
 }
 
-#grid {
+#griglia {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .square{
     border: 1px solid black;
-    width: calc(100/8);
+    width: calc(100%/10);
     aspect-ratio: 1/1;
 }
 
