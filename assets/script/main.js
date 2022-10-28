@@ -1,5 +1,6 @@
 const griglia = document.getElementById('griglia')
-
+let button = document.getElementById('button')
+button.addEventListener('click', game)
 
 function creazioneBox(){
     div = document.createElement('div')
@@ -8,7 +9,7 @@ function creazioneBox(){
 }
 
 console.log( creazioneBox() )
-
+function game(){
 for (let i = 0; i < 100; i++){
     
     let element = creazioneBox();
@@ -23,4 +24,5 @@ for (let i = 0; i < 100; i++){
     griglia.append (element)
     element.innerHTML += `${i}`
 
+}
 }
