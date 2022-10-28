@@ -2,15 +2,14 @@ const griglia = document.getElementById('griglia')
 console.log(griglia)
 
 function creazioneBox(){
-    const div = document.createElement('div')
-    div.classList.add('square')
+    let div = document.createElement('div')
+    div.classList.add('square')  
     return div;
 }
 
 console.log( creazioneBox() )
 
 for (let i = 0; i < 100; i++){
-
     let element = creazioneBox();
     console.log(element)
     element.addEventListener('click', function() {
@@ -20,4 +19,5 @@ for (let i = 0; i < 100; i++){
     })
 
     griglia.append (element)
+
 }
