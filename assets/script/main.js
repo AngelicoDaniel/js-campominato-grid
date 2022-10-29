@@ -15,6 +15,7 @@ function creazioneBox(){
 
 console.log( creazioneBox() )
 function game(){
+griglia.innerHTML = ''
 var squareToCreate = difficulty.value*difficulty.value;
 for (let i = 1; i <= squareToCreate; i++){
     
@@ -32,3 +33,5 @@ for (let i = 1; i <= squareToCreate; i++){
 
 }
 }
+
+
