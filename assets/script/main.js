@@ -8,6 +8,8 @@ function creazioneBox(){
     div.classList.add('square');
     div.style.width = "calc(100%/"+difficulty.value+")";
     return div;
+    //var aggettivo = "scemo";
+    //var frase = "daniel è " + aggettivo + "!";
 }
 
 
