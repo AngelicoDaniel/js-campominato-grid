@@ -4,17 +4,17 @@ let difficulty = document.getElementById('difficulty')
 button.addEventListener('click', game)
 
 function creazioneBox(){
-    div = document.createElement('div')
-    div.classList.add('square')  
+    div = document.createElement('div');
+    div.classList.add('square');
+    div.style.width = "calc(100%/"+difficulty.value+")";
     return div;
 }
 
+
 console.log( creazioneBox() )
 function game(){
-    if (difficulty.value == 'easy'){
-        
-    }
-for (let i = 1; i <= 100; i++){
+var squareToCreate = difficulty.value*difficulty.value;
+for (let i = 1; i <= squareToCreate; i++){
     
     let element = creazioneBox();
     console.log(element)
