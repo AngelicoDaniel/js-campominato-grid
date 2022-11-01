@@ -8,29 +8,28 @@ function creazioneBox(){
     div.classList.add('square');
     div.style.width = "calc(100%/"+difficulty.value+")";
     return div;
-    //var aggettivo = "scemo";
-    //var frase = "daniel è " + aggettivo + "!";
+    //var aggettivo = "forte";
+    //var frase = "goku è " + aggettivo + "!";
 }
 
 
 console.log( creazioneBox() )
 function game(){
-griglia.innerHTML = ''
-var squareToCreate = difficulty.value*difficulty.value;
-for (let i = 1; i <= squareToCreate; i++){
-    
-    let element = creazioneBox();
-    console.log(element)
+    griglia.innerHTML = ''
+    var squareToCreate = difficulty.value*difficulty.value;
+    for (let i = 1; i <= squareToCreate; i++){
 
-    element.addEventListener('click', function() {
-    console.log(this)
-    this.classList.toggle('active')
-        
+        let element = creazioneBox();
+        console.log(element)
+
+        element.addEventListener('click', function() {
+        console.log(this)
+        this.classList.toggle('active')
+
     })
-
-    griglia.append (element)
+    
     element.innerHTML += `${i}`
-
+    griglia.append (element)
 }
 }
 
